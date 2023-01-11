@@ -12,19 +12,23 @@
 
 	function create (){
 		$itinerary = ItineraryModel::new($_POST);
-		Views::redirect('/roteiros');
+		Views::redirect('/roteiro');
 	}
 
-	function destroy () {
-
+	function destroy ($id) {
+		ItineraryModel::destroy($id);
+		Views::redirect('/roteiro');
 	}
 
-	function edit () {
-
+	function edit ($id) {
+		$itinerary = ItineraryModel::find($id);
+		Views::render('itinerary.edit', get_defined_vars());
 	}
 
-	function update () {
-
+	function update ($id) {
+		$itinerary = ItineraryModel::find($id);
+		$itinerary->update($_REQUEST);
+		Views::redirect('/roteiro');
 	}
 
 }

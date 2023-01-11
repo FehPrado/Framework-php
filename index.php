@@ -41,12 +41,12 @@ $router->register('/editar-produto/:id', 'post', 'ProductsController', 'update')
 
 //rotas roteiros
 
-$router->register('/roteiros', 'get', 'ItineraryController', 'index');
+$router->register('/roteiro', 'get', 'ItineraryController', 'index');
 $router->register('/novo-roteiro', 'get', 'ItineraryController', 'new');
 $router->register('/criar-roteiro', 'post', 'ItineraryController', 'create');
-$router->register('/apagar-roteiro', 'get', 'ItineraryController', 'destroy');
-$router->register('/editar-roteiro', 'get', 'ItineraryController', 'edit');
-$router->register('/editar-roteiro', 'post', 'ItineraryController', 'update');
+$router->register('/apagar-roteiro/:id', 'get', 'ItineraryController', 'destroy');
+$router->register('/editar-roteiro/:id', 'get', 'ItineraryController', 'edit');
+$router->register('/editar-roteiro/:id', 'post', 'ItineraryController', 'update');
 
 
 

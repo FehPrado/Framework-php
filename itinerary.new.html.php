@@ -12,6 +12,6 @@
 	<br>
 
 	<button>Criar</button>
-	<a href="/roteiros">Cancelar</a>
+	<a href="/roteiro">Cancelar</a>
 
 </form>
