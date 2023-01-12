@@ -7,4 +7,3 @@ if ( $argv[1] == "seed" ){
   require "migrate/seed.php";
 }
 
-
