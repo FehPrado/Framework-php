@@ -1,0 +1,10 @@
+<?php
+if ( $argv[1] == "migrate" ){
+  require "migrate/migrate.php";
+}
+
+if ( $argv[1] == "seed" ){
+  require "migrate/seed.php";
+}
+
+

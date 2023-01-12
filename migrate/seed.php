@@ -8,7 +8,9 @@ $DB = 'itinerary';
 $conect = new mysqli($HOST, $USER, $PASS, $DB);
 
 //fazendo o seed
+echo("Fazendo o seed");
 
+echo "<\n>";
 //products seed
 mysqli_query($conect, "INSERT INTO products (id, name) VALUES ('1', 'Felipe')");
 mysqli_query($conect, "INSERT INTO products (id, name) VALUES ('2', 'Murilo')");
