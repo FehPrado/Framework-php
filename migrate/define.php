@@ -14,3 +14,4 @@ $dbname = 'itinerary';
 //Nome da tabela
 $tbone = 'products';
 $tbtwo = 'itinerarys';
+$tbthree = 'users';

@@ -12,6 +12,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/roteiro/">Roteiros</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/usuario/">Cadastro/login</a>
+        </li>
         <!-- <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Produtos</a>
         </li>

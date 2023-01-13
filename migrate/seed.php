@@ -19,4 +19,6 @@ mysqli_query($conect, "INSERT INTO $tbtwo (id, name, description) VALUES ('2', '
 mysqli_query($conect, "INSERT INTO $tbtwo (id, name, description) VALUES ('3', 'Roça', 'Mato e barro')");
 mysqli_query($conect, "INSERT INTO $tbtwo (id, name, description) VALUES ('4', 'itatiaia', 'itatiaia')");
 
+mysqli_query($conect, "INSERT INTO $tbthree (id, name, email, password) VALUES ('1', 'Felipe', 'f@gmail.com', '123')");
+
 

@@ -53,5 +53,17 @@ if ($conect->query($sqltb) === TRUE) {
 
 echo "<\n>";
 
+$sqltb = "CREATE TABLE `$dbname`.`$tbthree` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(45) NULL,
+    `email` VARCHAR(100) NULL,
+    `password` VARCHAR(100) NULL,
+    PRIMARY KEY (`id`));";
+  if ($conect->query($sqltb) === TRUE) {
+      echo "$tbthree criada com sucesso";
+  } else {
+      echo "Falha ao criar $tbthree: " . $conect->error;
+  }
+
 
 $conect->close();
