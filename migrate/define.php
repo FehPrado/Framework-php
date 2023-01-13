@@ -15,3 +15,4 @@ $dbname = 'itinerary';
 $tbone = 'products';
 $tbtwo = 'itinerarys';
 $tbthree = 'users';
+$tbfour = 'users_itineraryes';

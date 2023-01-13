@@ -64,6 +64,18 @@ $sqltb = "CREATE TABLE `$dbname`.`$tbthree` (
   } else {
       echo "Falha ao criar $tbthree: " . $conect->error;
   }
+  echo "<\n>";
+  $sqltb = "CREATE TABLE `$dbname`.`$tbfour` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `id_user` VARCHAR(45) NULL,
+    `id_itinerary` VARCHAR(100) NULL,
+    PRIMARY KEY (`id`));";
+  if ($conect->query($sqltb) === TRUE) {
+      echo "$tbfour criada com sucesso";
+  } else {
+      echo "Falha ao criar $tbfour: " . $conect->error;
+  }
+  echo "<\n>";
 
 
 $conect->close();
