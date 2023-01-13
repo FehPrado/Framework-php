@@ -4,8 +4,8 @@
 
 	<label>Nome</label> <br>
 	<input type="text" name="name" placeholder="Digite aqui..." value="<?php echo $itinerary->name ?>">
-  <label>Nome</label> <br>
-	<input type="text" name="name" placeholder="Digite aqui..." value="<?php echo $itinerary->description ?>">
+  <label>Descrição</label> <br>
+	<input type="text" name="description" placeholder="Digite aqui..." value="<?php echo $itinerary->description ?>">
 
 	<br>
 	<br>
