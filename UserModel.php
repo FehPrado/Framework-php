@@ -7,7 +7,7 @@
   public $emial;
   public $password;
 
-  protected static $permited_parms = ['name', 'email', 'password'];
+  protected static $permited_params = ['name', 'email', 'password'];
   
 
 }
