@@ -1,7 +1,8 @@
 <?php
 require 'define.php';
 //crinado conexão para o sedd
-$conect = new mysqli($HOST, $USER, $PASS, $dbname);
+// $conect = new mysqli($HOST, $USER, $PASS, $dbname);
+mysqli_select_db($conect, $dbname);
 
 //fazendo o seed
 echo("Fazendo o seed");
