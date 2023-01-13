@@ -10,7 +10,7 @@
 	<br>
 	<br>
 
-	<button>Editar</button>
-	<a href="/roteiros">Cancelar</a>
+	<button class="btn btn-primary">Editar</button>
+	<a class="btn btn-primary" href="/roteiros">Cancelar</a>
 
 </form>

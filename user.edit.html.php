@@ -15,7 +15,7 @@
 	<br>
 	<br>
 
-	<button>Editar</button>
-	<a href="/usuario">Cancelar</a>
+	<button class="btn btn-primary">Editar</button>
+	<a class="btn btn-primary" href="/usuario">Cancelar</a>
 
 </form>

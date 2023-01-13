@@ -1,4 +1,4 @@
-<a href="/novo-roteiro">Novo</a>
+<a class="btn btn-primary" href="/novo-roteiro">Novo</a>
 
 <table class="table table-dark table-striped" border=1>
 
