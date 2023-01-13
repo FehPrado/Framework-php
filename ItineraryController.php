@@ -18,6 +18,7 @@
 	function show($id) {
 		$itinerary = ItineraryModel::find($id);
 		Views::render('itinerary.show', get_defined_vars());
+		
 	}
 	
 	function destroy ($id) {
