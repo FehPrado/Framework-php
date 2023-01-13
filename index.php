@@ -53,6 +53,11 @@ $router->register('/info-roteiro/:id', 'get', 'ItineraryController', 'show');
 //rotas usuarios
 $router->register('/usuario', 'get', 'UserController', 'index');
 $router->register('/novo-usuario', 'get', 'UserController', 'new');
+$router->register('/criar-usuario', 'post', 'UserController', 'create');
+$router->register('/apagar-usuario/:id', 'get', 'UserController', 'destroy');
+$router->register('/editar-usuario/:id', 'get', 'UserController', 'edit');
+$router->register('/editar-usuario/:id', 'post', 'UserController', 'update');
+$router->register('/info-usuario/:id', 'get', 'UserController', 'show');
 
 
 

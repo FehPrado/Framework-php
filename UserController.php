@@ -2,7 +2,7 @@
 
   function index(){
     
-      $users = UserController::all();
+      $users = UserModel::all();
       Views::render('user.index', get_defined_vars());
     
   }
