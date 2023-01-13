@@ -1,7 +1,7 @@
 
 <?php class ItineraryModel extends Model {
 
-static public $table = "itinerary";
+static public $table = "itinerarys";
 
 public $id;
 public $name;

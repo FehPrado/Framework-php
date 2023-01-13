@@ -1,7 +1,7 @@
 <?php class ItineraryController{
   
   function index () {
-		$itinerary = ItineraryModel::all();
+		$itinerarys = ItineraryModel::all();
 		Views::render('itinerary.index', get_defined_vars());
 	}
 
@@ -9,12 +9,17 @@
 
 		Views::render('itinerary.new', get_defined_vars());
 	}
-
+	
 	function create (){
 		$itinerary = ItineraryModel::new($_POST);
 		Views::redirect('/roteiro');
 	}
-
+	
+	function show($id) {
+		$itinerary = ItineraryModel::find($id);
+		Views::render('itinerary.show', get_defined_vars());
+	}
+	
 	function destroy ($id) {
 		ItineraryModel::destroy($id);
 		Views::redirect('/roteiro');
@@ -30,5 +35,6 @@
 		$itinerary->update($_REQUEST);
 		Views::redirect('/roteiro');
 	}
+	
 
 }

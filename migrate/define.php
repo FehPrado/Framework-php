@@ -13,4 +13,4 @@ $conect = new mysqli($HOST, $USER, $PASS);
 $dbname = 'itinerary';
 //Nome da tabela
 $tbone = 'products';
-$tbtwo = 'itinerary';
+$tbtwo = 'itinerarys';

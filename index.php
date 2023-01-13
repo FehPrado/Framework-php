@@ -47,7 +47,7 @@ $router->register('/criar-roteiro', 'post', 'ItineraryController', 'create');
 $router->register('/apagar-roteiro/:id', 'get', 'ItineraryController', 'destroy');
 $router->register('/editar-roteiro/:id', 'get', 'ItineraryController', 'edit');
 $router->register('/editar-roteiro/:id', 'post', 'ItineraryController', 'update');
-
+$router->register('/info-roteiro/:id', 'get', 'ItineraryController', 'show')
 
 
 
