@@ -43,10 +43,10 @@
 		Views::render('user.login', get_defined_vars());
 	}
 
-	function open(){
-		$user = UserModel::validate($_POST);
-		Views::redirect('/usuario');
-	}
+	// function open(){
+	// 	$user = UserModel::validate($_POST);
+	// 	Views::redirect('/usuario');
+	// }
 	
 
 }
