@@ -7,7 +7,9 @@
 	<br>
   <label>Descrição</label> <br>
 	<input type="text" name="description" placeholder="Digite aqui...">
-
+	<br>
+	<label>Imagem</label>
+	<input type="file" name="img" placeholder="Selecione a foto...">
 	<br>
 	<br>
 

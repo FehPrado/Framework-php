@@ -6,6 +6,8 @@
 	<input type="text" name="name" placeholder="Digite aqui..." value="<?php echo $itinerary->name ?>">
   <label>Descrição</label> <br>
 	<input type="text" name="description" placeholder="Digite aqui..." value="<?php echo $itinerary->description ?>">
+	<label>Imagem</label> <br>
+	<input type="file" name="img" placeholder="Selecione a foto..." value="<?php echo $itinerary->$img ?>">
 
 	<br>
 	<br>
