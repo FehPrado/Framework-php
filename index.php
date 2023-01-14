@@ -58,6 +58,8 @@ $router->register('/apagar-usuario/:id', 'get', 'UserController', 'destroy');
 $router->register('/editar-usuario/:id', 'get', 'UserController', 'edit');
 $router->register('/editar-usuario/:id', 'post', 'UserController', 'update');
 $router->register('/info-usuario/:id', 'get', 'UserController', 'show');
+$router->register('/login-usuario/', 'get', 'UserController', 'login');
+
 
 
 

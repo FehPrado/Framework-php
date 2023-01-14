@@ -1,6 +1,3 @@
-<a class="btn btn-primary" href="/novo-usuario">Novo</a>
-<a class="btn btn-primary" href="/login-usuario">Login</a>
-
 
 <table class="table table-dark table-striped" border=1>
 
@@ -18,3 +15,6 @@
 	<?php } ?>
 
 </table>
+
+<form action=""></form>
+asdasdadasdasdasdasdasdasdasdasdasdasdasdasdasdasdas

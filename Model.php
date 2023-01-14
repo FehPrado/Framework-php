@@ -23,6 +23,7 @@
     return self::convertResult($stmt->get_result());
   }
 
+
   function update ($params) {
     $filterParams = self::filterParams($params);
 
@@ -50,6 +51,12 @@
 
     $stmt->execute();
   }
+
+  // static function validate($params){
+  //   $table = static::$table;
+  //   $query = "SELECT * FROM $table WHERE email = $email AND password = $password"
+  //   $password->
+  // }
 
   static function destroy ($id) {
     $table = static::$table;
