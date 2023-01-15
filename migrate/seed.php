@@ -18,10 +18,10 @@ mysqli_query($conect, "INSERT INTO $tbone (id, name) VALUES ('3', 'julio')");
 echo "<\n>";
 //itinerary seed
 echo "Fazendo seed na tabela $tbtwo";
-mysqli_query($conect, "INSERT INTO $tbtwo (id, name, description) VALUES ('1', 'Praia', 'Areia e agua')");
-mysqli_query($conect, "INSERT INTO $tbtwo (id, name, description) VALUES ('2', 'Campos', 'Gelado')");
-mysqli_query($conect, "INSERT INTO $tbtwo (id, name, description) VALUES ('3', 'Roça', 'Mato e barro')");
-mysqli_query($conect, "INSERT INTO $tbtwo (id, name, description) VALUES ('4', 'itatiaia', 'itatiaia')");
+mysqli_query($conect, "INSERT INTO $tbtwo (id, name, description, img, date_start, date_end) VALUES ('1', 'Praia', 'Areia e agua', 'praia.jpg', '10/01/2023', '20/01/2023')");
+mysqli_query($conect, "INSERT INTO $tbtwo (id, name, description, img, date_start, date_end) VALUES ('2', 'Campos', 'Gelado', 'campos.jpg', '10/01/2023', '20/01/2023')");
+mysqli_query($conect, "INSERT INTO $tbtwo (id, name, description, img, date_start, date_end) VALUES ('3', 'Roça', 'Mato e barro', 'roça.jpg', '10/01/2023', '20/01/2023')");
+mysqli_query($conect, "INSERT INTO $tbtwo (id, name, description, img, date_start, date_end) VALUES ('4', 'itatiaia', 'itatiaia', 'itatiaia.jpg', '10/01/2023', '20/01/2023')");
 
 
 echo "<\n>";

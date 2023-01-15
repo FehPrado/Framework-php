@@ -7,12 +7,12 @@ public $id;
 public $name;
 public $description;
 public $img;
-
-// if($_FILES["$img"]["size"] > 0) {
-//   $extensaoArquivo = end(explode('.',$_FILES["$img"]["name"]));
-//   $nomeArquivo = "photo/".sha1(time().$_FILES["$img"]["name"]).".".$extensaoArquivo;
+public $date_start;
+public $date_end;
 
 
-protected static $permited_params = ['name', 'description', 'img'];
+
+
+protected static $permited_params = ['name', 'description', 'img', 'date_start', 'date_end'];
 
 }

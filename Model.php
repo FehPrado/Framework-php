@@ -48,13 +48,23 @@
     $s = str_repeat('s', count(array_keys($filterParams)));
 
     $stmt->bind_param($s, ...array_values($filterParams));
+    if(isset($_FILES['img']))
+    {
+       $ext = strtolower(substr($_FILES['img']['name'],-4)); //Pegando extensão do arquivo
+       $new_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
+       $dir = './imagens/'; //Diretório para uploads 
+       move_uploaded_file($_FILES['pic']['tmp_name'], $dir.$new_name); //Fazer upload do arquivo
+       echo("Imagen enviada com sucesso!");
+    } 
 
     $stmt->execute();
+
+
   }
 
   // static function validate($params){
   //   $table = static::$table;
-  //   $query = "SELECT * FROM $table WHERE email = $email AND password = $password"
+  //   $query = "SELECT * FROM $table WHERE   = $email AND password = $password"
   //   $password->
   // }
 
