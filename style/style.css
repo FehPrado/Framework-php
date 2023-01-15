@@ -1,0 +1,91 @@
+body {
+  background-color: rgb(48, 254, 103);
+}
+
+.nav {
+  background-color: rgb(100, 253, 115) !important;
+}
+
+.margin-l {
+  margin-left: 90px !important;
+}
+
+.margin-r {
+  margin-right: 90px !important;
+}
+
+@media (max-width: 600px) {
+  .m-l {
+    margin-left: 30px !important;
+  }
+  .m-r {
+    margin-right: 30px !important;
+  }
+}
+@media (max-width: 991px) {
+  .end-button {
+    display: contents;
+  }
+}
+.fund {
+  height: calc(100vh - 100px);
+  max-height: 750px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1139px) {
+  .fund {
+    max-height: 500px;
+  }
+}
+@media only screen and (max-width: 668px) {
+  .fund {
+    max-height: 400px;
+  }
+}
+.font-s {
+  font-size: 3.6rem !important;
+}
+
+.fw-bold {
+  font-weight: 800 !important;
+}
+
+.img-banner {
+  width: 900px !important;
+}
+
+.card-banner {
+  max-width: 900px;
+  padding: 266px 64px 21px 9%;
+}
+
+.card-banner > span {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(70, 165, 159);
+  text-transform: uppercase;
+  line-height: 3.13;
+  letter-spacing: 4px;
+}
+
+.card-banner > h2 {
+  font-size: 55px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  line-height: 0.91;
+}
+
+@media only screen and (max-width: 1321px) {
+  .card-banner {
+    padding: 166px 64px 21px 9%;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .card-banner {
+    padding: 80px 64px 21px 9%;
+    font-size: 10px !important;
+  }
+}/*# sourceMappingURL=style.css.map */

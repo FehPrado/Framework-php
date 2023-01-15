@@ -7,8 +7,8 @@
 
 	<br>
 	<br>
-
-
+<img src="http://localhost:8000/<?php echo $itinerary->img ?>" alt="..." class="card-img-top" style="width: 18rem;">
+  <br>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Inscrever
