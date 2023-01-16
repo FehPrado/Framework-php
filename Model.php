@@ -50,10 +50,10 @@
     $stmt->bind_param($s, ...array_values($filterParams));
 
     if($_FILES["img"]["size"] > 0) {
-      $extensaoArquivo = end(explode('.',$_FILES["img"]["name"]));
+      $extensaoArquivo =strtolower(end(explode('.',$_FILES["img"]["name"])));
       $nomeArquivo = "imagens/".sha1(time().$_FILES["img"]["name"]).".".$extensaoArquivo;
       
-      move_uploaded_file($_FILES["img"]["tmp_name"],$nomeArquivo);
+      move_uploaded_file($_FILES["img"]["img"],$nomeArquivo);
     }
     $stmt->execute();
 
