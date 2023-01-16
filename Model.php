@@ -48,17 +48,14 @@
     $s = str_repeat('s', count(array_keys($filterParams)));
 
     $stmt->bind_param($s, ...array_values($filterParams));
-    if(isset($_FILES['img']))
-    {
-       $ext = strtolower(substr($_FILES['img']['name'],-4)); //Pegando extensão do arquivo
-       $new_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
-       $dir = './imagens/'; //Diretório para uploads 
-       move_uploaded_file($_FILES['pic']['tmp_name'], $dir.$new_name); //Fazer upload do arquivo
-       echo("Imagen enviada com sucesso!");
-    } 
 
+    if($_FILES["img"]["size"] > 0) {
+      $extensaoArquivo = end(explode('.',$_FILES["img"]["name"]));
+      $nomeArquivo = "imagens/".sha1(time().$_FILES["img"]["name"]).".".$extensaoArquivo;
+      
+      move_uploaded_file($_FILES["img"]["tmp_name"],$nomeArquivo);
+    }
     $stmt->execute();
-
 
   }
 

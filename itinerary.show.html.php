@@ -52,7 +52,7 @@
 </div> 
 
 <div class="position-relative conteiner">
-  <img src="http://localhost:8000/<?php echo $itinerary->img ?>" class="position-absolute top-50 start-50 img" alt="Flaha ao carregar foto ">
+  <img src="http://localhost:8000/imagens/<?php echo $itinerary->img ?>" class="position-absolute top-50 start-50 img" alt="Flaha ao carregar foto ">
 </div>
    
 <br>

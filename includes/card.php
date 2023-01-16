@@ -22,7 +22,7 @@
 <?php foreach ($itinerarys as $key => $itinerary) { ?>
   <div class="col">
     <div class="card h-100"> 
-      <img src="<?php echo $itinerary->img ?>" class="card-img-top" style="height: 189px;" alt="...">
+      <img src="http://localhost:8000/imagens/<?php echo $itinerary->img ?>" class="card-img-top" style="height: 189px;" alt="...">
       <div class="card-body">
         <h5 class="card-title"><?php echo $itinerary->name ?></h5>
         <p class="card-text"><?php echo $itinerary->description ?></p>
