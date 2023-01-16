@@ -12,7 +12,7 @@
           <div class="col-3 ">
             <div class="card" style="width: 18rem;">
               <div>
-                <img src="http://localhost:8000/imagens/<?php echo base64_decode($itinerary->img) ?>" class="card-img-top" style="height: 189px;" alt="...">
+                <img src="http://localhost:8000/imagens/<?php echo $itinerary->img ?>" class="card-img-top" style="height: 189px;" alt="...">
               </div>
               <div class="card-body">
                 <h5 class="card-title"><?php echo $itinerary->name ?></h5>
