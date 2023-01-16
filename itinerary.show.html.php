@@ -4,20 +4,32 @@
   }
 
   .nav {
-    background-color: rgb(101, 255 , 199) !important;
+    background-color: rgb(101, 255, 199) !important;
   }
 
-  .top{
-    margin-top:  123px;
+  .top {
+    margin-top: 123px;
+  }
+
+  .img{
+    width: 45rem;
+    margin-top: -501px;
+    border-radius: 32px;
+    border-style: solid;
+    margin-left: -56px;
+  }
+
+  .stable{
+    margin-top: 210px;
   }
 </style>
 
-<div >
-  <div>
-    <h1>Bem vindo ao roteiro <?php echo $itinerary->name ?> </h1>
-  </div>
+<div class="">
+  <h1 class="pt-2 px-4 ">Bem vindo ao roteiro <?php echo $itinerary->name ?> </h1>
+</div>
+<div class="stable conteiner px-4">
 
-  <div>
+  <div >
     <h2>Descrição</h2>
     <?php echo $itinerary->description ?>
   </div>
@@ -33,24 +45,21 @@
 
   <br>
 
-  <div  class="position-relative" >
-    <img src="http://localhost:8000/<?php echo $itinerary->img ?>"  class="position-absolute top-50 start-50" alt="..." style="width: 45rem;margin-top: -258px;/* border: 24px; *//* border-block-color: black; */border-radius: 32px;border-style: solid; margin-left: -56px;"">
-  </div>
-   
-  <br>
-  <!-- Button trigger modal -->
-
-
-
 
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Inscrever
   </button>
+</div> 
+
+<div class="position-relative conteiner">
+  <img src="http://localhost:8000/<?php echo $itinerary->img ?>" class="position-absolute top-50 start-50 img" alt="Flaha ao carregar foto ">
 </div>
+   
+<br>
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class=" modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
